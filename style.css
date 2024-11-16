@@ -1,0 +1,122 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-left: 20px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid white;
+}
+
+.main {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.rights {
+    font-size: 14px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .header .menu {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .main-text {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 14px;
+    }
+}
